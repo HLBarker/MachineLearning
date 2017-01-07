@@ -52,6 +52,24 @@ str(combined2)
 pred2 <- combined2[892:1309, ]
 train2 <- combined2[1:891, ]  
 
+# Comparing distributions of variables in training and prediction sets
+par(mfrow = c(2,2))
+hist(pred2$Age)
+hist(train2$Age)
+hist(pred2$Fare)
+hist(train2$Fare)
+
+par(mfrow = c(2,2))
+hist(pred2$SibSp)
+hist(train2$SibSp)
+hist(pred2$Parch)
+hist(train2$Parch)
+
+par(mfrow = c(2,2))
+plot(pred2$Embarked)
+plot(train2$Embarked)
+plot(pred2$Title)
+plot(train2$Title)
 
 # -----------------------------------------------------------------------------
 # Subset data into training and test sets
