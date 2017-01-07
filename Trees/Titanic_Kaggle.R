@@ -77,7 +77,7 @@ plot(train2$Title)
 set.seed(20)
 train.set <- sample(c(TRUE, FALSE), nrow(train2), rep = TRUE)
 test = (!train.set)
-test.y <- train[test, ]$Survived
+test.y <- train2[test, ]$Survived
 
 # need the same Factor classes present in Train and Test sets for boosting
 summary(train2[train.set, 13])
