@@ -20,8 +20,9 @@ combined <- rbind(train, pred)
 str(combined)
 View(combined)
 
-# Several variables have NAs when a feature is absent, but this
-# the data isn't missing, so we'll change these NAs to "None
+# Several variables have NAs when a feature is absent, but 
+# the data isn't missing, so we'll change these NAs to "None"
+# to better describe these features
 addnone <- function(x) {
   # Changes NAs in a factor variable into "None"
   #
