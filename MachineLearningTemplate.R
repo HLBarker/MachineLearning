@@ -89,7 +89,7 @@ dotplot(results)
  # e.g., for random forests, this is mtry
 mtry <- sqrt(ncol(predictor data)) # default for tuning parameter (e.g., 7)
 tunegrid <- expand.grid(.mtry = c(1:15)) # grid search with 1 through 15 (for example) as mtry
-setseed(seed)
+set.seed(seed)
 rf_gridsearch <- train(response ~ ., data=dataset, method="rf", metric=metric, tuneGrid=tunegrid, trControl=control)
 print(rf_gridsearch)
 dotplot(rf_gridsearch)
