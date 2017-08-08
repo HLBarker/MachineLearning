@@ -1,5 +1,5 @@
 # Machine Learning Template
-# Author = Hilary Barker
+# Author = Hilary Barker (adapted from Jason Brownlee's ML blog)
 # 08/08/2017
 
 ## Load packages
