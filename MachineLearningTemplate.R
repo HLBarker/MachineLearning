@@ -6,7 +6,6 @@
 library(tidyverse)
 library(caret)
 library(caretEnsemble)
-library(plotly)
 source("~/Documents/Data Science/R_Workshop_Hope_041117/panelutils.R")
 
 
